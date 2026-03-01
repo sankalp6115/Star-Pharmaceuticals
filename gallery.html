@@ -1,69 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Star Pharma CRM – Gallery</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #f4f6f9;
+    color: #111;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.gallery {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+    display: block;
+}
+
+.caption {
+    padding: 14px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+}
+</style>
 </head>
+
 <body>
-    <h3>Screenshots</h3>
-<table>
-  <tr>
-    <td align="center">
-      <img src="./public/Assets/readmeAsset/main.png" width="200"><br>
-      <sub><b>Main Dashboard</b></sub>
-    </td>
-    <td align="center">
-      <img src="./public/Assets/readmeAsset/products.png" width="200"><br>
-      <sub><b>Products List</b></sub>
-    </td>
-    <td align="center">
-      <img src="./public/Assets/readmeAsset/product-detail.png" width="200"><br>
-      <sub><b>Product Detail</b></sub>
-    </td>
-  </tr>
 
-  <tr>
-    <td align="center">
-      <img src="./public/Assets/readmeAsset/visuals.png" width="200"><br>
-      <sub><b>Visual Selection</b></sub>
-    </td>
-    <td align="center">
-      <img src="./public/Assets/readmeAsset/visual-modal.png" width="200"><br>
-      <sub><b>Visual Modal</b></sub>
-    </td>
-    <td align="center">
-      <img src="./public/Assets/readmeAsset/slides.png" width="200"><br>
-      <sub><b>Slideshow Builder</b></sub>
-    </td>
-  </tr>
+<h1>📸 App Screenshots</h1>
 
-  <tr>
-    <td align="center">
-      <img src="./public/Assets/readmeAsset/slideshow.png" width="200"><br>
-      <sub><b>Fullscreen Slideshow</b></sub>
-    </td>
-    <td align="center">
-      <img src="./public/Assets/readmeAsset/order.png" width="200"><br>
-      <sub><b>Orders Screen</b></sub>
-    </td>
-    <td align="center">
-      <img src="./public/Assets/readmeAsset/notes.png" width="200"><br>
-      <sub><b>Quick Notes</b></sub>
-    </td>
-  </tr>
+<div class="gallery">
 
-  <tr>
-    <td align="center">
-      <img src="./public/Assets/readmeAsset/doctors.png" width="200"><br>
-      <sub><b>Doctors List</b></sub>
-    </td>
-    <td align="center">
-      <img src="./public/Assets/readmeAsset/settings.png" width="200"><br>
-      <sub><b>Settings & Backup</b></sub>
-    </td>
-    <td></td>
-  </tr>
-</table>
+<div class="card">
+<img src="./public/Assets/readmeAsset/main.png">
+<div class="caption">Main Dashboard</div>
+</div>
+
+<div class="card">
+<img src="./public/Assets/readmeAsset/products.png">
+<div class="caption">Products List</div>
+</div>
+
+<div class="card">
+<img src="./public/Assets/readmeAsset/product-detail.png">
+<div class="caption">Product Detail</div>
+</div>
+
+<div class="card">
+<img src="./public/Assets/readmeAsset/visuals.png">
+<div class="caption">Visual Selection</div>
+</div>
+
+<div class="card">
+<img src="./public/Assets/readmeAsset/visual-modal.png">
+<div class="caption">Visual Modal</div>
+</div>
+
+<div class="card">
+<img src="./public/Assets/readmeAsset/slides.png">
+<div class="caption">Slideshow Builder</div>
+</div>
+
+<div class="card">
+<img src="./public/Assets/readmeAsset/slideshow.png">
+<div class="caption">Fullscreen Slideshow</div>
+</div>
+
+<div class="card">
+<img src="./public/Assets/readmeAsset/order.png">
+<div class="caption">Orders Screen</div>
+</div>
+
+<div class="card">
+<img src="./public/Assets/readmeAsset/notes.png">
+<div class="caption">Quick Notes</div>
+</div>
+
+<div class="card">
+<img src="./public/Assets/readmeAsset/doctors.png">
+<div class="caption">Doctors List</div>
+</div>
+
+<div class="card">
+<img src="./public/Assets/readmeAsset/settings.png">
+<div class="caption">Settings & Backup</div>
+</div>
+
+</div>
+
 </body>
 </html>

@@ -187,7 +187,7 @@ Offline-first CRM built for practical pharmaceutical field management.
 
 <hr>
 
-<p><a href="gallery.html">App Screenshots</a></p>
+<p><a href="https://sankalp6115.github.io/Star-Pharmaceuticals/gallery.html">App Screenshots</a></p>
 
 <p>
 License: Private Use / Personal Tool
