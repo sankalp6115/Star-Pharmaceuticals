@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Pharma Dashboard</title>
+<!-- Scripts -->
+<script src="./js/fuse.js"></script>
+<script src="./js/index.js" type="module"></script>
+
+<link rel="stylesheet" href="./css/global.css">
+<link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <div class="user">
+        <div class="avatar">
+          <img src="./Assets/Images/avatar.png" alt="User Avatar">
+        </div>
+        <span>
+          <span class="greet" id="greetingText"></span>
+          <span class="name">Sanskar</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="carousel-buttons">
+        <button class="prev" style="display: none;">&lt;</button>
+        <button class="next" style="display: none;">&gt;</button>
+      </div>
+      <div class="hero-carousel">
+        <img src="" class="carousel-img">
+      </div>
+      <div>
+        <h3>Star Pharmaceuticals</h3>
+        <p>+91 89687XXXXX<br>starpharma@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="feature"><button class="card"><img src="./Assets/Images/product.svg"></button><span>Products</span></div>
+      <div class="feature"><button class="card"><img src="./Assets/Images/visual.png"></button><span>Visual</span></div>
+      <div class="feature"><button class="card"><img src="./Assets/Images/slide.jpg"></button><span>Slides</span></div>
+      <div class="feature"><button class="card"><img src="./Assets/Images/order.png"></button><span>Orders</span></div>
+      <div class="feature"><button class="card"><img src="./Assets/Images/note.png"></button><span>Quick Notes</span></div>
+      <div class="feature"><button class="card"><img src="./Assets/Images/doctor.png"></button><span>Doctors</span></div>
+      <div class="feature"><button class="card"><img src="./Assets/Images/setting.png"></button><span>Settings</span></div>
+    </div>
+
+    <div class="section product-cat">
+      <div class="section-head">
+        <h3>Product From</h3>
+        <a href="products.html">View All</a>
+      </div>
+      <!-- Category container -->
+      <div class="category-filter" id="category-filter"></div>
+      <div id="product-list" class="horizontal-scroll"></div>
+    </div>
+
+    </div>
+
+  </div>
+</body>
+</html>

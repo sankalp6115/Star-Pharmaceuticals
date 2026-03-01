@@ -1,0 +1,6 @@
+{
+  "appId": "com.starpharma.app",
+  "appName": "Star Pharmaceuticals",
+  "webDir": "public",
+  "bundledWebRuntime": false
+}

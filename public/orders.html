@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orders</title>
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/orders.css">
+</head>
+
+<body>
+
+<div class="header">
+  <button id="backBtn" onclick="window.location.href='index.html'">🏠</button>
+  <h3>Orders</h3>
+  <button id="addBtn">New</button>
+</div>
+
+<h4>Active</h4>
+<div class="grid" id="active"></div>
+
+<h4>History</h4>
+<div class="grid" id="history"></div>
+
+<div class="modal" id="modal">
+  <div class="box">
+    <input id="name" placeholder="Customer name">
+    <input id="phone" placeholder="Phone">
+    <input id="address" placeholder="Address">
+    <textarea id="goods" placeholder="Goods list"></textarea>
+    <button id="save">Save</button>
+  </div>
+</div>
+
+<div class="modal" id="orderDetailModal">
+    <div class="box">
+        <button class="closeBtn" onclick="orderDetailModal.style.display='none'">❌</button>
+        <h4>Order Details</h4>
+        <p><strong>Customer Name:</strong> <span id="detailCustomerName"></span></p>
+        <p><strong>Phone:</strong> <span id="detailPhone"></span></p>
+        <p><strong>Address:</strong> <span id="detailAddress"></span></p>
+        <p><strong>Goods:</strong> <span id="detailGoods"></span></p>
+        <p><strong>Status:</strong> <span id="detailStatus"></span></p>
+        <p><strong>Recorded at:</strong> <span id="detailRecordedAt"></span></p>
+        <p id="deliveryRow"><strong>Delivered at:</strong> <span id="detailDeliveredAt"></span></p>
+        <button id="deleteOrderBtn" style="background: #ff4d4d; margin-top: 10px; width: 100%;">Delete Order</button>
+    </div>
+</div>
+
+<script type="module" src="js/orders.js"></script>
+</body>
+</html>

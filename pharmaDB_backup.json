@@ -1,0 +1,107 @@
+{
+  "images": {},
+  "products": [
+    {
+      "name": "Benadryl",
+      "category": "Syrup",
+      "price": "120",
+      "description": "Cough Syrup",
+      "visualAid": null,
+      "image": {},
+      "id": 7
+    },
+    {
+      "name": "Folisol",
+      "category": "Injection",
+      "price": "100",
+      "description": "Injection",
+      "visualAid": null,
+      "image": {},
+      "id": 8
+    },
+    {
+      "name": "Sulfa-Vete",
+      "category": "Injection",
+      "price": "300",
+      "description": "Injection",
+      "visualAid": null,
+      "image": {},
+      "id": 9
+    },
+    {
+      "name": "Risperdal",
+      "category": "Tablet",
+      "price": "400",
+      "description": "Fever ",
+      "visualAid": null,
+      "image": {},
+      "id": 10
+    }
+  ],
+  "visuals": [
+    {
+      "name": "Benadryl",
+      "category": "Syrup",
+      "image": {},
+      "id": 8
+    },
+    {
+      "name": "Risperdal",
+      "category": "Tablet",
+      "image": {},
+      "id": 9
+    },
+    {
+      "name": "Bacotaz",
+      "category": "Tablet",
+      "image": {},
+      "id": 10
+    }
+  ],
+  "slideshows": [
+    {
+      "name": "Dr. Anand Kumar",
+      "visualIds": [
+        8,
+        9,
+        10
+      ],
+      "id": 5
+    }
+  ],
+  "orders": [
+    {
+      "name": "Dr. Anand Kumar",
+      "phone": "+91 8843929494",
+      "address": "23/38 Shastrinagar",
+      "goods": "Bacotaz-10\nCombiflam-20\nNicotex-20\n",
+      "done": false,
+      "timestamp": "01/03/2026, 14:03:31",
+      "id": 13
+    }
+  ],
+  "notes": [
+    {
+      "id": 1,
+      "text": "Visit Dr. Manoj Singh at 9pm 2-March-2026"
+    }
+  ],
+  "doctors": [
+    {
+      "name": "Dr. Manoj Singh",
+      "phone": "+91 9823743478",
+      "area": "91/23, Kidwainagar",
+      "remark": "Gives large orders.",
+      "timestamp": 1772354126847,
+      "id": 2
+    },
+    {
+      "name": "Dr. Savita Bajpai",
+      "phone": "9384578457",
+      "area": "12, Shuklaganj",
+      "remark": "Gives small orders.",
+      "timestamp": 1772354178764,
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 12px;
+}
+
+.card {
+  padding: 8px;
+  background-color: white;
+  border: 2px solid var(--text);
+  border-radius: 8px;
+  box-shadow: 4px 4px 0px var(--text);
+  transition: 0.12s;
+  position: relative;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.card div.caption{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3px;
+}
+
+.card .goods-preview{
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  width: 150px;
+}
+
+.card:active {
+  box-shadow: 2px 2px 0px var(--text);
+}
+
+h4 {
+    color: var(--text);
+    margin-top: 20px;
+    padding:0 12px;
+}
+textarea{
+    height:80px;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+.box {
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: white;
+  border-radius: 8px;
+  border: 2px solid var(--text);
+  box-shadow: 4px 4px 0px var(--text);
+  padding: 16px;
+  position: relative;
+}
+
+
+
+.closeBtn{
+  position: absolute;
+  top: -5px;
+  right: -15px;
+}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Products</title>
+
+    <script src="./js/fuse.js"></script>
+
+    <link rel="stylesheet" href="css/global.css"/>
+    <link rel="stylesheet" href="css/products.css"/>
+  </head>
+
+  <body>
+    <div class="app">
+    <div class="header">
+      <button id="backBtn" onclick="window.location.href='index.html'">🏠</button>
+      <h3>Products</h3>
+      <button id="addBtn">Add</button>
+    </div>
+
+    <input id="searchInput" placeholder="Search..." />
+
+    <div class="grid" id="grid"></div>
+
+    <div class="modal" id="modal">
+      <div class="box">
+        <button class="closeBtn" onclick="modal.style.display='none'">❌</button>
+        <input id="nameInput" placeholder="Name" />
+        <input id="categoryInput" placeholder="Type (e.g. Tablet, Syrup)"/>
+        <input id="priceInput" type="number" placeholder="Price" />
+        <textarea id="descriptionInput" placeholder="Description"></textarea>
+        Attach Visual-Aid 
+        <input list="visualAidList" id="visualAidInput" placeholder="Search Visual Aid..." />
+        <datalist id="visualAidList"></datalist>
+        <input id="imageInput" type="file" />
+        <button id="saveBtn">Save</button>
+      </div>
+    </div>
+    </div>
+
+    <script type="module" src="js/products.js"></script>
+  </body>
+</html>

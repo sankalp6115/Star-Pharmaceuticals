@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Slideshows</title>
+    <script src="./js/fuse.js"></script>
+    <link rel="stylesheet" href="css/global.css"/>
+    <link rel="stylesheet" href="css/slides.css"/>
+  </head>
+
+  <body>
+    <div class="app">
+    <div class="header">
+      <div class="heading">
+        <button id="backBtn" onclick="window.location.href='index.html'">🏠</button>
+        <h3>Create Slideshow</h3>
+      </div>
+
+        <div class="tools">
+          <button id="saveBtn">Save Slideshow</button>
+          <button id="resetBtn">Reset</button>
+          <div class="live-list">0 selected</div>
+        </div>
+    </div>
+
+    <input id="searchInput" placeholder="Search visuals..." />
+
+    <div class="grid" id="grid"></div>
+
+    <h3>Saved Slideshows</h3>
+    <div id="slideshows"></div>
+
+    <div class="modal" id="modal">
+      <div class="box">
+        <button class="closeBtn" onclick="modal.style.display='none'">❌</button>
+        <input id="name" placeholder="Slideshow Name"/>
+        <button id="save">Save</button>
+      </div>
+    </div>
+
+    <div class="modal" id="selectedListModal">
+      <div class="box">
+        <button class="closeBtn" id="closeSelectedListBtn">❌</button>
+        <h4>Selected Items</h4>
+        <div id="selectedItemsList"></div>
+      </div>
+    </div>
+
+    </div>
+
+    <div class="modal" id="slideshowModal">
+      <div class="slideshow-box">
+        <button id="closeBtn" class="closeBtn">❌</button>
+        <div class="slideshow-image-container">
+          <img id="slideshowImage" />
+          <div class="slide-name" id="slideName"></div>
+        </div>
+        <button id="prevBtn">&lt;</button>
+        <button id="nextBtn">&gt;</button>
+      </div>
+    </div>
+
+    <script type="module" src="js/slides.js"></script>
+  </body>
+</html>

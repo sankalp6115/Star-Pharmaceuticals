@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Doctors</title>
+<script src="./js/fuse.js"></script>
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/doctors.css">
+</head>
+
+<body>
+
+<div class="header">
+  <button id="backBtn" onclick="window.location.href='index.html'">🏠</button>
+  <h3>Doctors</h3>
+  <button id="addBtn">Add</button>
+</div>
+
+<input id="search" placeholder="Search..." style="width:100%; margin:10px 0;">
+
+<div class="grid" id="grid"></div>
+
+<div class="modal" id="modal">
+  <div class="box">
+    <button class="closeBtn" onclick="modal.style.display='none'">❌</button>
+    <input id="name" placeholder="Name">
+    <input id="phone" placeholder="Phone">
+    <input id="area" placeholder="Area / Address">
+    <textarea id="remark" placeholder="Remark"></textarea>
+    <button id="save">Save</button>
+  </div>
+</div>
+
+<div class="modal" id="doctorDetailModal">
+    <div class="box">
+        <button class="closeBtn" onclick="doctorDetailModal.style.display='none'">❌</button>
+        <h4>Doctor Details</h4>
+        <p><strong>Name:</strong> <span id="detailName"></span></p>
+        <p><strong>Phone:</strong> <span id="detailPhone"></span></p>
+        <p><strong>Area:</strong> <span id="detailArea"></span></p>
+        <p><strong>Remark:</strong> <span id="detailRemark"></span></p>
+        <p><strong>Timestamp:</strong> <span id="detailTimestamp"></span></p>
+    </div>
+</div>
+
+<script type="module" src="js/doctors.js"></script>
+</body>
+</html>

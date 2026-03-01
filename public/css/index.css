@@ -1,0 +1,173 @@
+.header .avatar {
+  display: inline;
+  vertical-align: middle;
+}
+
+div.avatar img {
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--text);
+}
+
+/* Hero Section */
+div.hero {
+    color: var(--text);
+}
+
+/* Carousel */
+.hero-carousel {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--text);
+  border-radius: 8px;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.slide-out-left {
+  transform: translateX(-100%) scale(0.8);
+  opacity: 0.1;
+}
+
+.slide-out-right {
+  transform: translateX(100%) scale(0.8);
+  opacity: 0.1;
+}
+
+.slide-in-left {
+  transform: translateX(-100%) scale(0.8);
+}
+
+.slide-in-right {
+  transform: translateX(100%) scale(0.8);
+}
+
+.active {
+  transform: translateX(0) scale(1);
+  opacity: 1;
+}
+
+div.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px 0px;
+}
+
+div.feature{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text);
+}
+
+div.feature span {
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  border: 2px solid var(--text);
+  box-shadow: 4px 4px 0px var(--text);
+  overflow: hidden;
+  transition: 0.12s;
+  position: relative;
+  color: var(--text);
+}
+
+.card:active {
+  transform: scale(0.98);
+  box-shadow: 2px 2px 0px var(--text);
+}
+
+button.card {
+  height: 60px;
+  width: 60px;
+  border-radius: 8px;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary);
+}
+
+button.card img{
+  height: 30px;
+  width: 30px;
+  object-fit: contain;
+}
+
+/* Products from section */
+div.product-cat {
+  gap: 12px;
+  padding: 12px;
+  overflow-x: auto;
+  position: relative;
+  border-radius: 10px;
+  color: var(--text);
+}
+
+div.product-cat .category-chip {
+  padding: 8px 16px;
+  font-size: 14px;
+  white-space: nowrap;
+  border-radius: 8px;
+  border: 2px solid var(--text);
+}
+
+div.product-cat .category-chip.active {
+  background: var(--primary);
+  color: white;
+}
+
+div.product-cat a {
+  position: absolute;
+  right: 10px;
+  top: 30px;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+div.product-cat .category-filter {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  overflow: auto;
+}
+
+#product-list {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+#product-list .card {
+  flex: 0 0 150px;
+}
+
+#product-list .card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-bottom: 2px solid var(--text);
+}
+
+.caption {
+  padding: 8px;
+  font-size: 12px;
+}
